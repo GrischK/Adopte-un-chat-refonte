@@ -1,0 +1,26 @@
+//Base 
+@import "base/normalize";
+@import "base/typo";
+
+//Abstracts
+@import "abstracts/animation";
+@import "abstracts/mixins";
+@import "abstracts/variables";
+@import "abstracts/colors";
+
+//Components
+@import "components/button";
+@import "components/images";
+@import "components/search-button";
+@import "components/contact_button.scss";
+
+//Layout
+@import "layout/footer";
+@import "layout/header";
+@import "layout/main_section";
+@import "layout/navigation";
+@import "layout/contact";
+@import "layout/carrousel";
+@import "layout/form";
+@import "layout/propos";
+@import "layout/soutien";

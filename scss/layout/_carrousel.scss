@@ -1,0 +1,158 @@
+h2 {
+  font-family: $titlePolice;
+  color: $color-secondary;
+  font-size: $fontSizeHigh;
+}
+
+label{
+  font-size: 1rem;
+  font-family: $subtitlePolice;
+  line-height: 30px;
+  font-weight: bolder;
+}
+select {
+  font-family: $subtitlePolice; /*!important; /*Normalize empêche la prise en compte*/
+  font-size: 0.8rem;  /*!important; /*Normalize empêche la prise en compte*/
+}
+
+p {
+  font-size: $fontSizeStandard;
+}
+
+p {
+  font-family: $textPolice;
+  font-weight: 700;
+}
+
+.adopt-your-cat {
+  background-image: url("../../assets/card.png");
+  background-repeat: no-repeat;
+  background-size: 300px;
+  background-position: 105% -4%;;
+
+  .adopt-section-title {
+    text-align: center;
+    margin-top: 17vh;
+  }
+
+  .search {
+    @include flexSpaceAround;
+    align-items: center;
+    width: 90vw;
+    color: $shadow-color;
+    margin: 23vh auto auto;
+    background-color: $color-primary;
+    /*background-color: $color-primary;*/
+    padding: 20px;
+    border-radius: 10px 10px 0 0;
+
+    .form_container {
+    @include flexSpaceAround;
+    flex-grow: 1;
+      .search-block {
+        @include flexColumn;
+        align-items: center;
+        margin: 0px 10px;
+
+        label {
+          display: none;
+        }
+
+          select {
+            border: none;
+          }
+      }
+    }
+  }
+}
+
+.carrousel {
+  position: relative;
+  width: 90vw;
+  height: 90vh;
+  margin: 0 auto;
+  overflow: hidden;
+
+  .carrousel-container {
+    height: 100%;
+
+    .photo p {
+      position: absolute;
+      display: none;
+      text-align: center;
+    }
+
+    .photo.visible {
+      p {
+        color: $shadow-color;
+        font-family: $titlePolice;
+        font-weight: 900;
+        font-size: 1.6rem;
+        display: block;
+        background-color: rgb(141, 201, 214);
+        display: flex;
+        height: 100%;
+        width: 90vw;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        opacity: 0.8;
+
+        img {
+          height: 50px;
+          width: 50px;
+          margin-top: 10vh;
+          cursor: pointer;
+          position: absolute;
+          top: -9%;
+          right: 3%;
+        }
+      }
+    }
+  }
+
+  .slider-img {
+    object-fit: cover;
+    width: 100%;
+    height: 600px;
+  }
+}
+
+.select_field {
+  width: 100%;
+}
+
+@media screen and (max-width : 788px){
+  .search {
+    flex-direction: column;
+  }  
+}
+
+@media screen and (max-width : 590px){
+  .adopt-your-cat{
+    background-position: 160% -4%;
+  }
+}
+
+@media screen and (max-width : 435px){
+  .adopt-your-cat{
+    background-position: 220% -4%;
+  }
+}
+
+@media screen and (max-width: 370px) {
+  .adopt-your-cat {
+    background-position: 39vh -4%;
+  }
+} 
+
+@media screen and (max-width : 460px){
+  .form_container {
+    flex-direction: column;
+
+    select{
+      margin: 10px auto;
+    }
+  }
+}
+

@@ -1,0 +1,116 @@
+/*****FOOTER$*****/
+
+
+.footer{
+    width: 100%;
+    background-color: #8DC9D6;
+    text-align: center;
+    color: black;
+    font-size: 1rem;
+    font-family: $textPolice;
+    font-weight: 700;
+}
+
+
+    
+  .row{
+    display: flex;
+    justify-content: space-around;
+    height: 100px;
+   
+
+   
+  }
+  
+  .footer-col h4{
+    font-size: 18px;
+    text-transform: capitalize;
+    margin-top: 40px;
+    font-weight: 700;
+    position: relative;
+   
+  }
+  .footer-col h4::before{
+  
+    content: '';
+    position:absolute;
+    left: 0;
+    bottom: -10px;
+    height: 2px;
+    width: 50px;
+    text-align: center;
+  
+  }
+  
+  .footer-col a{
+    font-size: 16px;
+    color: black;
+    text-transform:capitalize;
+    text-decoration:none;
+    font-weight:700;
+    transition:all 0.3s ease ;
+  
+  }
+  .footer-col a:hover{
+    color: #ffffff;
+    padding-left:8px ;
+  
+  }
+  .Cookie{
+    margin: 40px 0;
+  }
+  .footer-col .socila-media{
+   
+    height: 80px;
+    width: 80px;
+    background-color: rgba(24, 127, 224, 0.2);
+    text-align: center;
+    border-radius: 50%;
+    margin: 10px;
+    color: #ffffff;
+    transition: all 0.3s ease;
+  
+  }
+  
+  
+  
+  .social-media-links a{
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 100px;
+  
+  }
+  .footer > .cat>h4{
+  bottom: 50px;
+  }
+  
+  
+  
+  @media screen and(max-with:600px) {
+    .footer{
+      
+      width: 100%;
+    } 
+ 
+   .social-media-links { 
+   display: flex;
+   text-align: center;
+  
+   
+   
+ 
+   }
+ }
+
+    
+
+
+
+
+
+
+
+
+
+
+
